@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="dropdown">
+                <button>☰</button>
+                <div class="content">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <div id="avatar">
+                    <img src="images/avatar.jpg" alt="avatar">
+                </div>
+                <div id="home-content">
+                    <h1>Hi - I'm Steve</h1>
+                    <p>The Builder of Minecraft. Every block I place is a step toward transforming imagination into reality. From humble shelters to sprawling cities, I embody the creative drive that has made Minecraft the ultimate canvas for millions of players worldwide.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#contact" class="btn">Hire me</a>
+                </div>
+            </section>
+
+            <section id="about" class="box">
+                <h2 id="about-title">About me</h2>
+                <p class>Building is more than stacking blocks—it’s about shaping stories, spaces, and communities. Every structure I create carries purpose, whether it’s a safe shelter, a grand monument, or a collaborative masterpiece. My role as a builder reflects the heart of Minecraft itself: turning imagination into something tangible that players can share, explore, and be inspired by.</p>
+
+                <div class="grid">
+                    <div class="subbox">
+                        <h3>Visionary Creator</h3>
+                        <p>I see potential in every block, turning simple resources into structures that inspire awe and spark new ideas.</p>
+                    </div>
+                    <div class="subbox">
+                        <h3>Architect of Worlds</h3>
+                        <p>My builds range from practical bases to monumental landmarks, shaping landscapes that tell stories and bring communities together.</p>
+                    </div>
+                    <div class="subbox">
+                        <h3>Community Builder</h3>
+                        <p>Beyond structures, I help forge connections. Multiplayer servers, YouTube showcases, and collaborative projects prove that building is about more than design-it’s about people.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="box">
+                <h2>Core Skills</h2>
+                <div class="grid">
+                    <div class="subbox"><strong>Block Mastery</strong>
+                        <p>Precision in placing and shaping blocks for any design.</p>
+                    </div>
+                    <div class="subbox"><strong>Architectural Design</strong>
+                        <p>Creating structures that balance function and beauty.</p>
+                    </div>
+                    <div class="subbox"><strong>Redstone Engineering</strong>
+                        <p>Building machines, contraptions, and automation systems.</p>
+                    </div>
+                    <div class="subbox"><strong>Landscape Shaping</strong>
+                        <p>Terraforming terrain to complement builds and enhance immersion.</p>
+                    </div>
+                    <div class="subbox"><strong>Creative Collaboration</strong>
+                        <p>Working with communities to bring massive projects to life.</p>
+                    </div>
+                    <div class="subbox"><strong>Showcasing & Inspiring</strong>
+                        <p>Sharing builds across YouTube and fan spaces to spark creativity in others.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <img src="images/castle.jpg" alt="castle">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/compacthouse.jpg" alt="compact house">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/netherportal.jpg" alt="nether portal">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/greenhouse.jpg" alt="greenhouse">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/lighthouse.jpg" alt="lighthouse">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/mountainhouse.jpg" alt="mountain house">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/hobbithouse.jpg" alt="hobbit house">
+                        </div>
+                        <div class="swiper-slide card">
+                            <img src="images/jphouse.jpg" alt="japanese house">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                    <div class="form-buttons">
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built block by block with creativity & courage</p>
+            <p>© 2025 Steve – The Builder of Minecraft</p>
+            
+            <div>
+                <a href="https://www.youtube.com/" target="_blank">YouTube Builds</a>
+                <a href="https://www.minecraftforum.net/" target="_blank">Minecraft Forums</a>
+                <a href="https://discord.com/" target="_blank">Fan Discord</a>
+                <a href="https://www.planetminecraft.com/projects/" target="_blank">Redstone Showcase</a>
+            </div>
+            
+            <p>“Building dreams, one block at a time.”</p>
+        </footer>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="preview">
+        </div>
+    </body>
+</html>
