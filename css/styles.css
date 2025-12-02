@@ -1,18 +1,18 @@
 :root {
   --bg: #f8f8f8;
   --text: #333333;
-  --text-secondary: #666666;
+  --text-secondary: #555555;
   --accent: #3c9d3c;
-  --border: #dddddd;
+  --border: #aaaaaa;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #1e1e1e;
     --text: #f0f0f0;
-    --text-secondary: #bbbbbb;
+    --text-secondary: #cccccc;
     --accent: #6cc46c;
-    --border: #333333;
+    --border: #444444;
   }
 }
 
